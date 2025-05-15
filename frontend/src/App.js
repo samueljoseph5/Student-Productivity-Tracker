@@ -40,14 +40,27 @@ function App() {
       formFields={formFields}
       components={{
         Header: () => (
-          <div style={{ textAlign: 'center', padding: '1rem' }}>
+          <div className="custom-header" style={{ 
+            textAlign: 'center', 
+            padding: '2.5rem 1.5rem',
+            background: 'linear-gradient(to right, #f8f9fa, #ffffff, #f8f9fa)',
+            borderRadius: '12px',
+            margin: '1.5rem 0',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
+            border: '1px solid rgba(0, 112, 243, 0.1)'
+          }}>
             <h1 style={{ 
-              fontWeight: 'bold', 
-              fontSize: '1.5rem',
-              color: '#1976d2',
-              marginBottom: '2rem'
+              fontWeight: '600', 
+              fontSize: '2.25rem',
+              background: 'linear-gradient(135deg, #0070f3 0%, #00a3ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              margin: '0',
+              padding: '0',
+              lineHeight: '1.3',
+              letterSpacing: '-0.02em'
             }}>
-              Welcome to Student Health & Productivity Tracker
+              Welcome to Student Health and Productivity Tracker
             </h1>
           </div>
         )
